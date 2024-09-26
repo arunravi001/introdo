@@ -1,0 +1,42 @@
+/*------------------------------ Web Fonts Start -----------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+
+/*------------------------------ Web Fonts End -----------------------------------------*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+}
+
+body{
+  background: #fff;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+  font-family: 'Mona-Sans', sans-serif;
+}
+
+@media (min-width: 1280px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1120px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .header-container {
+    max-width: 1120px;
+    width: 100%;
+  }
+}

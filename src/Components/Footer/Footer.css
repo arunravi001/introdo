@@ -1,0 +1,134 @@
+.footer {
+  background: linear-gradient(140.35deg, #170C34 14.46%, #482084 58.66%, #3A86FF 117.61%);
+  color: #fff;
+  padding: 120px 160px;
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  font-size: 16px;
+  width: 300px;
+}
+
+.subscribe-form button {
+  padding: 10px;
+  background-color: #ff3b81;
+  color: white;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.footer-section .new-badge,
+.footer-section .coming-soon {
+  background-color: #ff3b81;
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.app-badges img {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.certifications {
+  margin-bottom: 20px;
+}
+
+.certifications img {
+  margin: 0 10px;
+  height: 50px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin: 0 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-links ul li:hover {
+  color: #fff;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .subscribe-form input {
+    width: 200px;
+  }
+
+  .app-badges img {
+    width: 120px;
+  }
+
+  .certifications img {
+    height: 40px;
+  }
+}
