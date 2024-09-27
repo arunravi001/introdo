@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './Header.css';
 import Logo from '../../assets/images/logo.png'
+import LoginIcon from '../../assets/images/login-icon.png'
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   return (
     <header className="header">
-      <div className="header-textbar">Happy Employees, Effortless HR: Experience the introdo Advantage. <b>Try it for Free!</b> </div>
+      <div className="header-textbar desktop-show">Happy Employees, Effortless HR: Experience the introdo Advantage. <b>Try it for Free!</b> </div>
       <div className="header-container">
       <div className="logo">
         <img src={Logo} alt="Logo" />
@@ -25,12 +26,13 @@ const Header = () => {
           <option value="en">EN</option>
           <option value="ar">AR</option>
         </select>
-        <button className="login-btn">Login</button>
+        <button className="login-btn">Login <img src={LoginIcon} alt="Logo" /></button>
       </div>
       <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
-        {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
+        {isMobile ? <i className="fa fa-times"></i> : <i className="fa fa-bars"></i>}
       </button>
       </div>
+      <div className="header-textbar mobile-show">Happy Employees, Effortless HR: Experience the introdo Advantage. <b>Try it for Free!</b> </div>
     </header>
   );
 };

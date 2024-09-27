@@ -12,14 +12,33 @@ import footCertificateAicpa from '../../assets/images/foot-certificate-logo-5.pn
 const Footer = () => {
   return (
     <footer className="footer">
+      <div className="container">
+      <div className="row">     
+      
       <div className="footer-top">
-      <img src={footerLogo} alt="" />
+      <div className='footer-section'>
+      <div className="footer-logo">
+        <img src={footerLogo} alt="Logo" />
+      </div>
+      </div>  
+
+      <div className='footer-section subscripe-wrapper'>
         <h2>HR Updates, Straight To Your Inbox - Subscribe Today</h2>
         <div className="subscribe-form">
           <input type="email" placeholder="Enter Work Email" />
           <button type="submit">→</button>
         </div>
       </div>
+
+      <div className='footer-section'>
+        <select className="language-select">
+          <option value="en">EN</option>
+          <option value="ar">AR</option>
+        </select>
+      </div>
+      
+      </div>
+      <div className="row">
 
       <div className="footer-main">
         <div className="footer-section">
@@ -32,7 +51,7 @@ const Footer = () => {
             <li>Payroll Management</li>
             <li>People Analytics</li>
             <li>Recruitment <span className="new-badge">New</span></li>
-            <li>Performance Management <span className="coming-soon">Coming Soon</span></li>
+            <li className='long-text'>Performance Management <span className="coming-soon">Coming Soon</span></li>
           </ul>
         </div>
 
@@ -66,7 +85,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      </div>
 
+      <div className="row">
       <div className="footer-bottom">
         <div className="certifications">
           <img src={footCertificateBSI} alt="ISO 27001" /> 
@@ -87,6 +108,9 @@ const Footer = () => {
         <div className="footer-copyright">
           <p>Copyright © 2024 KPI Group. All Rights Reserved.</p>
         </div>
+      </div>
+      </div>
+      </div>
       </div>
     </footer>
   );

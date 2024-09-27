@@ -53,7 +53,6 @@
   font-family: 'Mona-Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #170C34;
@@ -66,6 +65,10 @@
 .header-right {
   display: flex;
   align-items: center;
+}
+
+i.fa{
+  color: #170C34;
 }
 
 .language-select {
@@ -89,7 +92,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 4px 28px 4px 20px;
+  padding: 4px 15px 4px 15px;
   gap: 10px;
   border: 1px solid #170C34;
   backdrop-filter: blur(2px);
@@ -97,6 +100,11 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.login-btn img{
+  width: 24px;
+  height: 24px;
 }
 
 .login-btn:hover {
@@ -114,6 +122,10 @@
   cursor: pointer;
 }
 
+.mobile-show{
+  display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-links {
@@ -127,17 +139,44 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #3b116b;
+    background: linear-gradient(140.35deg, #170C34 14.46%, #482084 58.66%, #3A86FF 117.61%);
     padding: 20px;
     text-align: center;
+    z-index: 1;
   }
 
   .nav-links-mobile a {
     margin: 10px 0;
     font-size: 18px;
+    color: #fff;
   }
 
   .mobile-menu-icon {
     display: block;
   }
+
+  .desktop-show{
+    display: none;
+  }
+
+  .mobile-show{
+    display: block;
+  }
+
+  .header-container {
+    height: 60px;
+    margin: 0px 20px;
+  }
+
+  .header-container {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .login-btn{
+    display: none;
+  }
+
 }
+
+
