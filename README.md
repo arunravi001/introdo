@@ -34,28 +34,6 @@ Timer Component: Displays the timer counting from 14:00 to 14:59.
 Progress Bar Component: Displays the progress bar that fills in sync with the timer.
 Footer Component : Footer Section incluse logo, navigation, mobile app btn, copywrite, subscripe form.
 
-Code Structure
-
-src/
-│
-├── components/
-│   ├── Tabs.jsx          # Manages auto and manual tab switching
-│   ├── Tabs.css          # Manages auto and manual tab switching CSS Style
-│   ├── Timer.jsx         # Handles the countdown timer
-│   ├── Timer.jsx         # Handles the countdown timer CSS Style
-│   └── ProgressBar.jsx   # Progress bar synced with the timer
-│   └── ProgressBar.jsx   # Progress bar synced with the timer CSS Style
-│── components/Header/
-│   ├── Header.jsx          # Manages Header Section
-│   ├── Header.css          # Manages Header Section CSS Style
-│── components/Footer/
-│   ├── Footer.jsx          # Manages Footer Section
-│   ├── Footer.css          # Manages Footer Section CSS Style
-│
-├── App.jsx               # Main application entry point
-├── main.jsx              # Vite-specific main file for rendering React
-└── index.css             # CSS styles for the application
-
 
 
 

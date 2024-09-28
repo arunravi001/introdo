@@ -1,38 +1,19 @@
-const ProgressBarComponent = ({ progress }) => {
+import React from 'react';
+
+const ProgressBar = ({ progress }) => {
   return (
-    <div className="progress-bar-container" style={containerStyle}>
+    <div style={{ width: '100%', backgroundColor: '#e0e0df', height: '8px', borderRadius: '5px' }}>
       <div
-        className="progress-bar-fill"
-        style={{ ...progressStyle, width: `${progress}%` }}
+        style={{
+          width: `${progress}%`,
+          backgroundColor: '#3b82f6',
+          height: '100%',
+          borderRadius: '5px',
+          transition: 'width 1s linear', // Smooth transition
+        }}
       ></div>
     </div>
   );
 };
 
-// Styles
-const containerStyle = {
-  height: '30px',
-  width: '100%',
-  backgroundColor: '#e0e0df',
-  borderRadius: '50px',
-  overflow: 'hidden',
-};
-
-const progressStyle = {
-  height: '100%',
-  backgroundColor: '#76c7c0',
-  transition: 'width 0.5s ease',
-};
-
-const TimerWithProgress = () => {
-  const [progress, setProgress] = useState(0);
-
-  return (
-    <div>
-      <TimerComponent setProgress={setProgress} />
-      <ProgressBarComponent progress={progress} />
-    </div>
-  );
-};
-
-export default TimerWithProgress;
+export default ProgressBar;

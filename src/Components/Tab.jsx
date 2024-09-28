@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from "react";
 import './Tab.css';
+import SideTabOneMessageIcon from '../assets/images/tab-left-menu-icon-1-1.svg'
+import SideTabOneOnboardIcon from '../assets/images/tab-left-menu-icon-1-2.svg'
+import SideTabOneCommunicationIcon from '../assets/images/tab-left-menu-icon-1-3.svg'
+import SideTabTwoMessageIcon from '../assets/images/tab-left-menu-icon-2-1.svg'
+import SideTabTwoOnboardIcon from '../assets/images/tab-left-menu-icon-2-2.svg'
+import SideTabTwoCommunicationIcon from '../assets/images/tab-left-menu-icon-2-3.svg'
+import SideTabThreeMessageIcon from '../assets/images/tab-left-menu-icon-3-1.svg'
+import SideTabThreeOnboardIcon from '../assets/images/tab-left-menu-icon-3-2.svg'
+import SideTabThreeCommunicationIcon from '../assets/images/tab-left-menu-icon-3-3.svg'
 
 const TabComponent = () => {
   const tabs = ["For HR Managers", "For Line Managers", "For Employees"];
@@ -17,7 +26,7 @@ const TabComponent = () => {
   const startAutoSwitch = () => {
     const newTimer = setInterval(() => {
       setActiveTab((prevTab) => (prevTab + 1) % tabs.length); // Cycle through tabs
-    }, 5000);
+    }, 500050005000);
     setTimer(newTimer);
   };
 
@@ -43,7 +52,7 @@ const TabComponent = () => {
             className={activeTab === index ? "active" : ""}
             onClick={() => handleTabClick(index)}
           >
-            {tab}
+            <span>{tab}</span>
           </button>
         ))}
       </div>
@@ -55,14 +64,19 @@ const TabComponent = () => {
       </div>
     </div>
     </div>
+    <div className="clear"></div>
     </div>
   );
 };
 
 const HRManagerTab = () => (
-  <div>
+  <div className="tab-content-box">
+    <div className="tab-left-side-content hr-manager-box">
+      <div className="tab-left-side-box"> <p><img src={SideTabOneMessageIcon} alt="Streamline Workforce Management" /> Streamline Workforce Management</p></div>
+      <div className="tab-left-side-box"><p><img src={SideTabOneOnboardIcon} alt="Smooth Employee Onboarding" /> Smooth Employee Onboarding</p></div>
+      <div className="tab-left-side-box"><p><img src={SideTabOneCommunicationIcon} alt="Enhance Internal Communication" /> Enhance Internal Communication</p></div>
+    </div>
     <div className="tab-box-right">
-      <h2>For HR Managers</h2>
       <p>Handle employee information digitally on our user-friendly platform. With automation, accuracy is guaranteed for reliable record-keeping.</p>
       <p>Simplify onboarding, capture essential employee data and automate payroll for seamless employee experiences.</p>
       <p>Facilitate company-wide communication, keeping everyone in the loop with important announcements, subsidiary changes and HR policy updates.</p>
@@ -71,9 +85,13 @@ const HRManagerTab = () => (
 );
 
 const LineManagerTab = () => (
-  <div>
+  <div className="tab-content-box">
+    <div className="tab-left-side-content line-manager-box">
+      <div className="tab-left-side-box"> <p><img src={SideTabTwoMessageIcon} alt="Streamline Workforce Management" /> Streamline Workforce Management</p></div>
+      <div className="tab-left-side-box"><p><img src={SideTabTwoOnboardIcon} alt="Smooth Employee Onboarding" /> Smooth Employee Onboarding</p></div>
+      <div className="tab-left-side-box"><p><img src={SideTabTwoCommunicationIcon} alt="Enhance Internal Communication" /> Enhance Internal Communication</p></div>
+    </div>
     <div className="tab-box-center">
-    <h2>For Line Managers</h2>
     <p>Simplify task management for a boost in team productivity. Clear assignments, monitored deadlines and smoother workflows await!</p>
     <p>Welcome new team members with ease – our automated workflows minimize admin hassle for quick integration into team dynamics.</p>
     <p>Keep the team engaged and informed on project milestones, fostering a positive, motivated environment for collaborative success.</p>
@@ -82,9 +100,13 @@ const LineManagerTab = () => (
 );
 
 const EmployeeTab = () => (
-  <div>
+  <div className="tab-content-box">
+    <div className="tab-left-side-content employees-box">
+      <div className="tab-left-side-box"> <p><img src={SideTabThreeMessageIcon} alt="Streamline Workforce Management" /> Streamline Workforce Management</p></div>
+      <div className="tab-left-side-box"><p><img src={SideTabThreeOnboardIcon} alt="Smooth Employee Onboarding" /> Smooth Employee Onboarding</p></div>
+      <div className="tab-left-side-box"><p><img src={SideTabThreeCommunicationIcon} alt="Enhance Internal Communication" /> Enhance Internal Communication</p></div>
+    </div>
     <div className="tab-box-left">
-    <h2>For Employees</h2>
     <p>Get clarity on tasks, access key information and perform tasks independently, fostering a culture of trust and ownership.</p>
     <p>Experience a pain-free onboarding experience with timely and accurate payroll processes – a positive start to your new role!</p>
     <p>Stay connected with real-time updates, polls, and surveys through our HRMS for an engaging and informed experience.</p>

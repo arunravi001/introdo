@@ -1,30 +1,38 @@
 import React, { useState, useEffect } from 'react';
 
-const TimerComponent = ({ setProgress }) => {
-  const [minutes, setMinutes] = useState(14);
-  const [seconds, setSeconds] = useState(0);
+const Timer = ({ onTimeUpdate }) => {
+  const [seconds, setSeconds] = useState(840); // Starting from 14:00
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSeconds((prevSeconds) => {
-        if (prevSeconds === 59) {
-          clearInterval(interval);  // Clear the interval after reaching 14:59
-          return prevSeconds;
+      setSeconds((prev) => {
+        if (prev < 899) {
+          return prev + 1;
+        } else {
+          clearInterval(interval); // Stop at 14:59
+          return prev;
         }
-        const newSeconds = prevSeconds + 1;
-        setProgress(newSeconds);  // Update the progress bar based on the seconds
-        return newSeconds;
       });
-    }, 1000);
+    }, 1000); // Every second
+    return () => clearInterval(interval); // Clean up the interval on component unmount
+  }, []);
 
-    return () => clearInterval(interval);  // Cleanup the interval when the component unmounts
-  }, [setProgress]);
+  useEffect(() => {
+    onTimeUpdate(seconds); // Update the parent with the current time
+  }, [seconds, onTimeUpdate]);
+
+  const formatTime = (secs) => {
+    const minutes = Math.floor(secs / 60);
+    const remainingSeconds = secs % 60;
+    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+  };
 
   return (
     <div>
-      <h1>
-        Time: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
-      </h1>
+      <h2>Timer</h2>
+      <p>{formatTime(seconds)}</p>
     </div>
   );
 };
+
+export default Timer;

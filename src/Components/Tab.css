@@ -1,5 +1,6 @@
 .benefits-section{
-  margin: 90px auto;
+  margin: 95px auto;
+  height: auto;
   width: 100%;
 }
 
@@ -50,15 +51,59 @@
 }
 
 .tab-button button{
-  padding: 8px 8px;
-  width: 192px;
-  height: 35px;
+  min-width: 210px;
+  min-height: 48px;
   border-radius: 40px;
   border: 1px solid #361863;
   margin: 0px 10px;
   text-align: center;
   gap: 4px;
-  margin-bottom: 20px;
+}
+
+.tab-button button:nth-child(1)::before{
+  content: "";
+  background: url(../assets/images/tab-icon-1.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -25px;
+}
+
+.tab-button button.active:nth-child(1)::before{
+  background: url(../assets/images/tab-icon-active-1.svg) no-repeat;
+}  
+
+.tab-button button:nth-child(2)::before{
+  content: "";
+  background: url(../assets/images/tab-icon-2.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -22px;
+}
+
+.tab-button button.active:nth-child(2)::before{
+  background: url(../assets/images/tab-icon-active-2.svg) no-repeat;
+}  
+
+.tab-button button:nth-child(3)::before{
+  content: "";
+  background: url(../assets/images/tab-icon-3.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -42px;
+}
+
+.tab-button button.active:nth-child(3)::before{
+  background: url(../assets/images/tab-icon-active-3.svg) no-repeat;
+}  
+
+.tab-button button span{
+  margin-left: 8px;
 }
 
 .tab-button button.active:nth-child(1) {  
@@ -79,7 +124,27 @@
   color: #fff;
 }
 
+.tab-content-box{
+  display: flex;
+}
+
+.tab-left-side-content{
+  flex: 1;
+  margin: 40px 40px 40px 0px;
+}
+
+.tab-left-side-content strong{
+  font-family: 'Mona-Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #361863;
+}
+
+
 .tab-box-right {
+  flex: 2;
   padding: 40px;
   color: #433A5B;
   background-color: #FFFFFF;
@@ -90,6 +155,7 @@
 }
 
 .tab-box-center {
+  flex: 2;
   padding: 40px;
   color: #433A5B;
   background-color: #FFFFFF;
@@ -100,6 +166,7 @@
 }
 
 .tab-box-left {
+  flex: 2;
   padding: 40px;
   color: #433A5B;;
   background-color: #FFFFFF;
@@ -121,14 +188,6 @@
   min-width: 200px;
 }
 
-.tab-content {
-  /* background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; */
-}
-
 .tab-content p {
     padding: 20px 0;
     font-size: 1rem;
@@ -141,7 +200,20 @@
     line-height: 150%;
     display: flex;
     align-items: flex-end;
-    letter-spacing: 0.02em;    
+    letter-spacing: 0.02em; 
+    margin-bottom: 0px;   
+}
+
+.tab-content .tab-left-side-box p{
+  font-family: 'Mona-Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.02em;
+  color: #361863;
 }
 
 .tab-content .tab-box-right p {
@@ -158,8 +230,47 @@
 
 .tab-content .tab-box-right p:nth-last-child(1),
 .tab-content .tab-box-center p:nth-last-child(1),
-.tab-content .tab-box-left p:nth-last-child(1) {
+.tab-content .tab-box-left p:nth-last-child(1){
   border-bottom: solid 1px transparent;
+}
+
+.tab-left-side-box {
+  padding: 0px 0px;
+  margin-right: 0px;
+}
+
+.tab-left-side-box img{
+  margin: 10px 20px 10px 10px;
+}
+
+.hr-manager-box .tab-left-side-box {
+  border-bottom: solid 1px #a4c7ff;
+}
+
+.line-manager-box .tab-left-side-box {
+  border-bottom: solid 1px #AB98C6;
+}
+
+.employees-box .tab-left-side-box {
+  border-bottom: solid 1px #FFC58A;
+}
+
+.tab-left-side-content.line-manager-box {
+  margin: 40px 80px 40px 0px;
+}
+
+.tab-left-side-content.employees-box {
+  margin: 40px 120px 40px 0px;
+}
+
+.tab-content .tab-left-side-content .tab-left-side-box:nth-last-child(1) {
+  border-bottom: solid 1px transparent;
+}
+
+.tab-button {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .sidebar {
@@ -183,6 +294,10 @@
 .info-item span {
   font-size: 1rem;
   color: #4f3cc9;
+}
+
+.clear{
+  clear: both;
 }
 
 /* Responsive Design */
