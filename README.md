@@ -9,7 +9,12 @@ Features
   Manual tab switching with timer reset.
   Smooth transitions between tabs and active tab highlighting.
 
-2. Responsive Design:
+2.Unlock The Perks Section
+  Timer: Incorporate a timer running from 14:00 to 14:59
+  Progress Bar: Sync a progress bar with the time
+  Percentage : Sync timer and progress bar with filling from %
+
+3. Responsive Design:
   The application is fully responsive, providing a consistent experience across devices and orientations.
 
 
