@@ -28,7 +28,7 @@
 }
 
 .section-heading span{  
-  font-family: 'Mona-Sans';
+  font-family: 'Mona-Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12.8px;
@@ -134,7 +134,7 @@
 }
 
 .tab-left-side-content strong{
-  font-family: 'Mona-Sans';
+  font-family: 'Mona-Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -193,7 +193,7 @@
     font-size: 1rem;
     line-height: 1.6;
     color: #433A5B;
-    font-family: 'Mona-Sans';
+    font-family: 'Mona-Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -205,7 +205,7 @@
 }
 
 .tab-content .tab-left-side-box p{
-  font-family: 'Mona-Sans';
+  font-family: 'Mona-Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -306,4 +306,9 @@
   .sidebar {
     flex-direction: column;
   }
+}
+
+
+@media (max-width: 576px) {
+  
 }

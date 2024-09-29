@@ -91,7 +91,7 @@
 
 .footer-section ul li {
   margin: 5px 0;
-  font-family: 'Mona-Sans';
+  font-family: 'Mona-Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -105,7 +105,7 @@
 .footer-section .coming-soon {
   background-color: transparent;
   padding: 2px 0px;
-  font-family: 'Mona-Sans';
+  font-family: 'Mona-Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 7px;

@@ -8,69 +8,172 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 30px;
+  max-width: 1120px;
+  margin: 30px auto;
 }
 
-.card {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
-  border-radius: 15px;
-  padding: 20px;
-  color: white;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+.utp-sec .card {
   transition: transform 0.2s ease;
   flex: 1 1 calc(33% - 40px); /* Flex: 1 1 for flexible growth, calc(33% - 40px) for width control */
+  border: none;
 }
 
-.card:hover {
+.utp-sec .card:hover {
   transform: translateY(-10px);
 }
 
-.card h3 {
+.utp-sec .card h2 {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31.25px;
+  line-height: 118%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.utp-sec .card h3 {
   font-size: 20px;
   margin-bottom: 15px;
 }
 
-.card p {
-  font-size: 14px;
-  line-height: 1.6;
+.utp-sec .card p {  
+  font-family: 'Mona-Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
 }
+
+.utp-sec .card .payroll {
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.utp-sec .card .badges{
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin-bottom: 0px;
+}
+
+.utp-sec .card .badges img {
+  width: 100%;
+}
+
+.utp-sec .card.orange-gradient p { 
+  padding: 15px 0px 40px 0px;
+ }
+
+ .utp-sec .card.pink-gradient p { 
+  padding: 15px 32px 40px 32px;
+ }
+
+ .utp-sec .card.pink-gradient h2 { 
+  padding: 32px 32px 15px 32px;
+ }
+
+ .utp-sec .card .blue-gradient{
+  margin-top: 30px;
+ }
+
+ .utp-sec .card .blue-gradient h2 { 
+  color: #241042 !important;
+  font-weight: 500;
+  text-align: center;
+ }
+
+ 
+ .utp-sec .card .blue-gradient p { 
+  padding: 15px 0px 15px 0px;
+  color: #433A5B !important;
+  text-align: center;
+ } 
 
 /* Specific card styling */
 .orange-gradient {
-  background: linear-gradient(135deg, #fdbb2d, #22c1c3);
+  background: linear-gradient(162.04deg, #FFAE5C 2.79%, #FD4190 80.66%);
+  padding: 32px;
+  border-radius: 32px;  
 }
 
 .purple-gradient {
-  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  background: linear-gradient(190.07deg, #FD4190 -12.2%, #A8C5FF 63%);
+  padding: 32px;
+  border-radius: 32px;
 }
 
 .blue-gradient {
-  background: linear-gradient(135deg, #43c6ac, #191654);
+  background: linear-gradient(156.77deg, #FEBED9 -37.31%, #C8DDFF 52.67%);
+  padding: 32px;
+  border-radius: 32px;
 }
 
 .pink-gradient {
-  background: linear-gradient(135deg, #fc5c7d, #6a82fb);
+  background: linear-gradient(340.7deg, #5E9CFF 33.95%, #69489A 114.7%);
+  border-radius: 32px;
 }
 
 .light-blue-gradient {
-  background: linear-gradient(135deg, #ee0979, #ff6a00);
+  background: linear-gradient(105.4deg, #FD6BA8 2.24%, #5E9CFF 96.35%);
+  border-radius: 32px;
+  padding: 0px;
+}
+
+.light-blue-gradient .rsc-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.light-blue-gradient .rsc-text{
+  flex: 1;
+  padding: 32px 0px 0px 32px;
+}
+.light-blue-gradient .rsc-image{
+  flex: 1;
+  padding: 10px 0px 0px;
+  text-align: end;
+}
+
+.purple-blue-gradient .cps-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.purple-blue-gradient .cps-text{
+  flex: 1;
+  padding: 32px 0px 10px;
+}
+.purple-blue-gradient .cps-image{
+  flex: 1;
 }
 
 .purple-blue-gradient {
-  background: linear-gradient(135deg, #3b8d99, #6b73ff);
+  background: linear-gradient(136.55deg, #8A70B0 8.08%, #482084 117.63%);
+  border-radius: 32px;
+  display: flex;
 }
 
 /* Media Queries for responsive behavior */
 @media (max-width: 768px) {
-  .card {
+  .utp-sec .card {
       flex: 1 1 calc(50% - 40px); /* Two cards per row on medium screens */
   }
 }
 
 @media (max-width: 480px) {
-  .card {
+  .utp-sec  .card {
       flex: 1 1 100%; /* Single card per row on smaller screens */
   }
 }
