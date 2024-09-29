@@ -28,10 +28,9 @@ const Timer = ({ onTimeUpdate }) => {
   };
 
   return (
-    <div>
-      <h2>Timer</h2>
-      <p>{formatTime(seconds)}</p>
-    </div>
+    <span>
+      {formatTime(seconds)}
+    </span>
   );
 };
 

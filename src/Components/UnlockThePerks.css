@@ -110,7 +110,7 @@
 
 .purple-gradient {
   background: linear-gradient(190.07deg, #FD4190 -12.2%, #A8C5FF 63%);
-  padding: 32px;
+  padding: 32px 32px 0px 32px;
   border-radius: 32px;
 }
 
@@ -165,10 +165,124 @@
   display: flex;
 }
 
+.purple-gradient .user-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px;
+  gap: 24px;
+  height: 256px;
+  left: 8.52%;
+  right: 8.24%;
+  top: calc(50% - 256px/2 + 41.5px);
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.utp-sec .card .purple-gradient .user-info p{
+    font-family: 'Mona-Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #000;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+}
+
+.user-info-box{
+
+}
+
+.user-info-image{
+  
+}
+
+.utp-sec .card .purple-gradient .user-info .user-info-text{
+
+}
+
+.utp-sec .card .purple-gradient .user-info .user-info-text h3{
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #170C34;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 10px;
+}
+
+.utp-sec .card .purple-gradient .user-info .user-info-text p{
+  font-family: 'Mona-Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #6F6881;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.utp-sec .card .purple-gradient .user-info .hours p{
+  font-family: 'Mona-Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #6F6881;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 30px;
+}
+
+.utp-sec .card .purple-gradient .user-info .time-update{
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #170C34;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.purple-gradient .user-info-box {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1.3px solid #EDE9F3;
+}
+
+.purple-gradient .user-info-image {
+  flex: 1;
+}
+
+.purple-gradient .user-info-text {
+  flex: 2;
+}
+
 /* Media Queries for responsive behavior */
 @media (max-width: 768px) {
   .utp-sec .card {
       flex: 1 1 calc(50% - 40px); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .utp-sec  .card {
+      flex: 1 1 100%; /* Single card per row on smaller screens */
   }
 }
 

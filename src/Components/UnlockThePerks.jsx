@@ -3,6 +3,7 @@ import './UnlockThePerks.css';
 import Timer from './Timer'; // Import Timer component
 import ProgressBar from './ProgressBar'; // Import ProgressBar component
 import GpsPayroll from '../assets/images/gps-payroll.png'
+import UserImage from '../assets/images/user-img.png'
 import LegacyHarmony from '../assets/images/lh-image.png'
 import RsCompliance from '../assets/images/rsc-image.png'
 import CloudPowered from '../assets/images/cps-image.png'
@@ -38,12 +39,18 @@ const UnlockThePerks = () => {
       <div className="purple-gradient">
         <div className="user-info">
           <div className="details">
+          <div className="user-info-box">
+          <div className="user-info-image">
+            <img src={UserImage} alt="Fatima Saleem" />
+            </div>
+            <div className="user-info-text">
             <h3>Fatima Saleem</h3>
             <p>Aug 07, 2024 - Aug 15, 2024</p>            
-            <p className="hours">Hours Worked: <strong>14:36 Hours</strong></p>
+            </div>
+            </div>
+            <div className="hours"> <p>Hours Worked:</p> <div className="time-update"> <Timer onTimeUpdate={handleTimeUpdate} /> Hours</div></div>
 
             <div style={{ textAlign: 'center', width: '200px', margin: '0 auto' }}>
-            <Timer onTimeUpdate={handleTimeUpdate} /> {/* Timer component */}
             <ProgressBar progress={progress} /> {/* ProgressBar component */}
           </div>
 

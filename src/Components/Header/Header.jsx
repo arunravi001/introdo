@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
-import Logo from '../../assets/images/logo.png'
-import LoginIcon from '../../assets/images/login-icon.png'
+import Logo from '../../assets/images/logo.svg'
+import LoginIcon from '../../assets/images/login-icon.svg'
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);

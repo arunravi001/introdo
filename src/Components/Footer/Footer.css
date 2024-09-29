@@ -223,4 +223,10 @@ li.long-text {
     gap: 16px;
     margin-bottom: 15px;
   }
+
+  .language-select {
+    position: absolute;
+    right: 0px;
+    margin-top: -150px;
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Assuming you'll write CSS for responsiveness in Footer.css
-import footerLogo from '../../assets/images/footer-logo.png'
+import footerLogo from '../../assets/images/footer-logo.svg'
 import appStoreBtn from '../../assets/images/app-store-btn.png'
 import playStoreBtn from '../../assets/images/play-store-btn.png'
 import footCertificateBSI from '../../assets/images/foot-certificate-logo-1.png'

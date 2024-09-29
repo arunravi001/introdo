@@ -347,16 +347,17 @@
   }
 
   .tab-button button {
-    min-width: 110px;
+    min-width: 160px;
     min-height: 70px;
     border-radius: 0px;
-    border-bottom: 4px solid #361863;
+    border-bottom: 4px solid #f3f3f5;
     border-top: none;
     border-left: none;
     border-right: none;
-    margin: 0px 5px;
+    margin: 0px 0px;
     text-align: center;
     gap: 4px;
+    background: transparent;
   }
 
   .tab-left-side-content {
@@ -406,5 +407,88 @@
   .line-manager-box .tab-left-side-box,
   .employees-box .tab-left-side-box {
     border-bottom: none;
+  }
+
+  
+.tab-button button:nth-child(1)::before{
+  content: "";
+  background: url(../assets/images/tab-icon-1-mob.svg) no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -25px;
+}
+
+.tab-button button.active:nth-child(1)::before{
+  background: url(../assets/images/tab-icon-active-1-mob.svg) no-repeat;
+}  
+
+.tab-button button:nth-child(2)::before{
+  content: "";
+  background: url(../assets/images/tab-icon-2-mob.svg) no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -22px;
+}
+
+.tab-button button.active:nth-child(2)::before{
+  background: url(../assets/images/tab-icon-active-2-mob.svg) no-repeat;
+}  
+
+.tab-button button:nth-child(3)::before{
+  content: "";
+  background: url(../assets/images/tab-icon-3-mob.svg) no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -42px;
+}
+
+.tab-button button.active:nth-child(3)::before{
+  background: url(../assets/images/tab-icon-active-3-mob.svg) no-repeat;
+}  
+
+.tab-button button span{
+  margin-left: 8px;
+  font-weight: 700;
+}
+
+.tab-button button.active:nth-child(1) {  
+  border-bottom: 4px solid #3A86FF;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background: transparent;
+  color: #482084;
+}
+
+.tab-button button.active:nth-child(2){  
+  border-bottom: 4px solid #482084;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background: transparent;
+  color: #482084;
+}
+
+.tab-button button.active:nth-child(3) {  
+  border-bottom: 4px solid #FF8100;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background: transparent;
+  color: #482084;
+}
+
+}
+
+
+@media (max-width: 480px) {
+  .tab-button button {
+    min-width: 110px;
   }
 }

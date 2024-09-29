@@ -1,14 +1,28 @@
-.progress-bar-container {
-  width: 100%;
-  background-color: #f3f3f3;
-  border-radius: 25px;
-  height: 20px;
-  margin-top: 20px;
+.hours-worked-percentage{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+  position: absolute;
+  left: 60%;
+  top: -730%;
+  transform: translate(-0%, -50%);
+  background: #3F1C74;
+  backdrop-filter: blur(2px);
+  border-radius: 100px;
 }
 
-.progress-bar-fill {
-  background-color: #4caf50;
-  height: 100%;
-  width: 0%;
-  transition: width 1s ease-in-out;
+
+.hours-worked-percentage span{
+  font-family: 'Mona-Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #EBF3FF;
+  min-width: 50px;
 }
