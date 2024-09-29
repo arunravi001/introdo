@@ -177,6 +177,10 @@ i.fa{
     display: none;
   }
 
+  button.mobile-menu-icon {
+    margin-right: 30px;
+  }
+
 }
 
 

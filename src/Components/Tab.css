@@ -303,12 +303,108 @@
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   
+  html, body{
+    overflow-x: hidden;
+  }
+
   .sidebar {
     flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 28.83px;
+  }
+
+  .benefits-section {
+    margin: 60px auto;
+  }
+
+  .utp-sec {
+    margin: 90px auto 60px !important;
+  }
+
+  .light-blue-gradient .rsc-box {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  } 
+
+  .purple-blue-gradient .cps-box {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
   }
 }
 
 
 @media (max-width: 576px) {
-  
+
+  .tab-button {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+
+  .tab-button button {
+    min-width: 110px;
+    min-height: 70px;
+    border-radius: 0px;
+    border-bottom: 4px solid #361863;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 0px 5px;
+    text-align: center;
+    gap: 4px;
+  }
+
+  .tab-left-side-content {
+    flex: 1;
+    margin: 10px 10px 10px 0px;
+  }
+
+  .tab-box-right {
+    box-shadow: 5px 6px 0px 3px #A4C7FF, 11px 17px 0px 8px #81B2FF;
+  }    
+  .tab-box-center {
+    box-shadow: -5px 5px 0px 3px #8A70B0, 11px 17px 0px 5px #69489A;
+  }
+
+  .tab-box-left {    
+    box-shadow: -5px 5px 0px 3px #FFC58A, -11px 17px 0px 5px #FFAE5C;
+  }
+
+  .hr-manager-box .tab-left-side-box,
+  .line-manager-box .tab-left-side-box,
+  .employees-box .tab-left-side-box {
+    transform: rotate(270deg);
+  }
+
+  .tab-left-side-content.hr-manager-box {
+    margin: 20px 20px 20px 0px;
+  }
+
+  .tab-left-side-content.line-manager-box {
+    margin: 20px 20px 20px 0px;
+  }
+
+  .tab-left-side-content.employees-box {
+    margin: 20px 20px 20px 0px;
+  }
+
+  .tab-content .tab-left-side-box p {
+    width: 60px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #361863;
+  }
+
+  .hr-manager-box .tab-left-side-box,
+  .line-manager-box .tab-left-side-box,
+  .employees-box .tab-left-side-box {
+    border-bottom: none;
+  }
 }
