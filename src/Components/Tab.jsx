@@ -26,7 +26,7 @@ const TabComponent = () => {
   const startAutoSwitch = () => {
     const newTimer = setInterval(() => {
       setActiveTab((prevTab) => (prevTab + 1) % tabs.length); // Cycle through tabs
-    }, 500050005000);
+    }, 5000);
     setTimer(newTimer);
   };
 
